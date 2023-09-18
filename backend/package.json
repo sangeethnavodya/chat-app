@@ -1,0 +1,46 @@
+{
+  "name": "sentb",
+  "version": "1.0.0",
+  "description": "SydHub-Web-NodeJS_Backend",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon --watch , server.js",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SenTransport/SydHub-Web-NodeJS_Backend.git"
+  },
+  "keywords": [
+    "SydHub-Web-NodeJS_Backend"
+  ],
+  "author": "sangeeth navodya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sangeethnavodya/senBE/issues"
+  },
+  "homepage": "https://github.com/sangeethnavodya/senBE#readme",
+  "dependencies": {
+    "@google/maps": "^1.1.3",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fastify-cors": "^6.1.0",
+    "fs": "^0.0.1-security",
+    "jest": "^29.6.2",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.0",
+    "mjml": "^4.14.1",
+    "mysql2": "^3.3.3",
+    "nodemailer": "^6.9.3",
+    "path": "^0.12.7",
+    "sequelize": "^6.32.0",
+    "sequelize-cli": "^6.6.0",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

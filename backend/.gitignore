@@ -1,0 +1,17 @@
+# Directories
+node_modules/
+dist/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+
+#data
+data/
+
+# Miscellaneous
+*.log
+*.swp
+.DS_Store
