@@ -1,4 +1,3 @@
-// pages/chat.js
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
@@ -14,15 +13,14 @@ const Chat = () => {
       setMessages((prevMessages) => [...prevMessages, message]);
     });
 
-    // Clean up the WebSocket connection on component unmount
+    // Cleanup function to remove the event listener when the component unmounts
     return () => {
-      socket.disconnect();
+      socket.off('message');
     };
   }, []);
 
   const handleSendMessage = () => {
     if (message.trim() !== '') {
-     console.log(message)
       socket.emit('message', message);
       setMessage('');
     }
